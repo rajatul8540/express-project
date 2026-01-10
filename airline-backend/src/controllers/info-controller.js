@@ -9,6 +9,17 @@ const info = (req, res) => {
         }
     )
 }
+const usersList = (req, res) => {
+    return res.status(StatusCodes.OK).json(
+        {
+            sucess: true,
+            message: 'I am v2  routes',
+            error: {},
+            data: {}
+        }
+    )
+}
 module.exports = {
-    info
+    info,
+    usersList
 }
